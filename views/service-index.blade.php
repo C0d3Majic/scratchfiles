@@ -7,7 +7,7 @@
     $ServiceType = 'something';
     @endphp
     <div class="container">
-
+	<!--
         <h2><strong>{{ $ServiceCategory->title }}</strong> Translation Services </h2> <!---PHP !--->
 
         <div class="row">
@@ -60,8 +60,8 @@
                     @endforeach
                 </ul>
             </div>
-        </div>
-
+        </div-->
+	<?php echo json_encode($serviceCategory); ?>
     </div>
 
     @include('frontEnd.partials.global.call-to-action')
